@@ -1,0 +1,8 @@
+<h2>Click on Increase to Increase font-size</h2>
+<h2>Click on Decrease to Decrease font-size</h2>
+<div class="  col-4">
+  <input type="text" class="form-control" (input)="gettingInput($event)">
+  <p [style.font-size.px]="fontSize" [class]="color">{{inputValue}}</p>
+  <button class="btn btn-outline-success"  [disabled]="status" (click)="onClickIncrease()">Increase</button>
+  <button class="btn btn-outline-danger mx-2" [disabled]="status" (click)="onClickDecrease()">Decrease</button>
+</div>
